@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="css/login_style.css">
+</head>
+<body>
+    <div class="background" id="bg">
+        <div class="form-box">
+            <div class="botton-box">
+                <div id="toggle"></div>
+                <button type="button" class="toggle-btn" onclick="signin()">Sign in</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
+            </div>
+            <div class="social-icon">
+                <img src="css/fb.png">
+                <img src="css/gmail.png">
+            </div>
+            <form id="signin" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" name="Signin_id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" name="Signin_password" required>
+                <label class="check-box">
+                    <input type="checkbox" class="check-box">
+                    Remember Password
+                </label>
+                <button type="submit" class="submit-btn" form="signin">Log in</button>
+            </form>
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" name="Signup_id" required>
+                <input type="email" class="input-field" placeholder="Enter Email" name="Signup_email" required>
+                <input type="password" class="input-field" placeholder="Enter Password" name="Signup_password" required>
+                <label class="check-box">
+                    <input type="checkbox" class="check-box">
+                    I agree to the terms
+                </label>
+                <button type="submit" class="submit-btn" form="signup">Sign up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("signin");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("toggle");
+        var b = document.getElementById("bg");
+        function signup(){
+            x.style.left = "-100%"
+            y.style.left = "10%"
+            z.style.left = "110px";
+            z.style.background = "black";
+            b.style.background = "black";
+        }
+        function signin(){
+            x.style.left = "10%"
+            y.style.left = "110%"
+            z.style.left = "0px";
+            z.style.background = "linear-gradient(to right, #3930A6, #EA9E8A)";
+            b.style.background = "url(css/cloud.png)";
+            b.style.backgroundSize = "cover";
+            b.style.backgroundPosition = "center";
+        }
+    </script>
+</body>
+</html>
