@@ -1,65 +1,55 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
+
 <head>
-    <title>Login and Register</title>
-    <link rel="stylesheet" href="css/login_style.css">
+    <title>Self introduction</title>
+    <link rel="stylesheet" href="css/intro.css">
+
 </head>
-<body>
-    <div class="background" id="bg">
-        <div class="form-box">
-            <div class="botton-box">
-                <div id="toggle"></div>
-                <button type="button" class="toggle-btn" onclick="signin()">Sign in</button>
-                <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
-            </div>
-            <div class="social-icon">
-                <img src="css/fb.png">
-                <img src="css/gmail.png">
-            </div>
-            <form id="signin" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" name="Signin_id" required>
-                <input type="password" class="input-field" placeholder="Enter Password" name="Signin_password" required>
-                <label class="check-box">
-                    <input type="checkbox" class="check-box">
-                    Remember Password
-                </label>
-                <button type="submit" class="submit-btn" form="signin">Log in</button>
-            </form>
-            <form id="signup" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" name="Signup_id" required>
-                <input type="email" class="input-field" placeholder="Enter Email" name="Signup_email" required>
-                <input type="password" class="input-field" placeholder="Enter Password" name="Signup_password" required>
-                <label class="check-box">
-                    <input type="checkbox" class="check-box">
-                    I agree to the terms
-                </label>
-                <button type="submit" class="submit-btn" form="signup">Sign up</button>
-            </form>
+
+<body id="bg">
+    <div class="side-bar">
+        <div class=href>
+            <a href="#Introduction">Introduction<br></a>
+        </div>
+        <div class=href>
+            <a href="#Education">Education<br></a>
+        </div>
+        <div class=href>
+            <a href="#Experience">Experience<br></a>
+        </div>
+        <div class=href>
+            <a href="#Project">Project<br></a>
+        </div>
+        <div class=href>
+            <a href="#Art">Art works<br></a>
+        </div>
+        <div class="information-link">
+            <img src="css/face.png">
+
+        </div>
+        <div class="information-detail">
+            <p>this is my information</p>
         </div>
     </div>
 
-    <script>
-        var x = document.getElementById("signin");
-        var y = document.getElementById("signup");
-        var z = document.getElementById("toggle");
-        var b = document.getElementById("bg");
-        function signup(){
-            x.style.left = "-100%"
-            y.style.left = "10%"
-            z.style.left = "110px";
-            z.style.background = "black";
-            b.style.background = "black";
-        }
-        function signin(){
-            x.style.left = "10%"
-            y.style.left = "110%"
-            z.style.left = "0px";
-            z.style.background = "linear-gradient(to right, #3930A6, #EA9E8A)";
-            b.style.background = "url(css/cloud.png)";
-            b.style.backgroundSize = "cover";
-            b.style.backgroundPosition = "center";
-        }
-    </script>
+    <div class="content" id="Intro">
+        <h1 id="Introduction">Introduction</h1>
+        <p>Hi, i'm 戴鈞彥, an </p>
+        <h1 id="Education">Education</h1>
+        <ul>
+            <p>second-year in National Dong Hwa University</p>
+            
+            <li class="list">Grade Point:</li>
+            <p>average of first year: 3.49<br>average of all semester: 3.17</p>
+            <li class="list">Course Complete:</li>
+            <p>Data Mining and Applications<br>Data Structures<br>Database Systems</p>
+        </ul>
+        <h1 id="Experience">Experience</h1>
+        <h1 id="Project">Project</h1>
+        <h1 id="Art">Art works</h1>
+    </div>
 </body>
+
 </html>
