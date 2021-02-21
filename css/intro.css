@@ -10,7 +10,7 @@
 
 .side-bar{
     height: 100%;
-    width: 15%;
+    width: auto;
     position: fixed;
     z-index: 1;
     top:0;
@@ -21,10 +21,12 @@
 }
 
 .href{
+    width: 100%;
     padding: 6px 8px 6px 20px;
     position: relative;
 }
 .href a{
+    border: solid white;
     font-size: 40px;
     text-decoration: none;
     color: white;
