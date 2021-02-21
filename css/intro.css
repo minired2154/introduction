@@ -1,6 +1,17 @@
 *{
     font-family: sans-serif;
 }
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 25px;
+    font-weight: bold;
+}
+ul li{
+    font-size: 25px;
+    font-weight: bold;
+}
 #bg {
     background-color: #F9E79F;
     height: 100%;
@@ -26,7 +37,6 @@
     position: relative;
 }
 .href a{
-    border: solid white;
     font-size: 40px;
     text-decoration: none;
     color: white;
@@ -51,26 +61,25 @@
     left: 0%;
     width: 200%;
 }
+
 .information-detail{
+    display: none;
+    z-index: 1;
     border: solid white;
     position: absolute;
-    width: 90%;
+    width: auto;
     bottom: 5%;
     left: 5%;
 }
-.information-detail p{
+.information-detail h3{
     color: white;
 }
 
-p{
-    font-weight: bold;
-}
 .content{
     padding:10px;
     width: 50%;
     height: auto;
-    border-style: solid;
-    border-color: black;
+    
     position:absolute;
 }
 .list{
